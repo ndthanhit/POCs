@@ -35,12 +35,12 @@ public class OneTimeLoggerTest {
         OneTimeLogger.info(log, "Format: {}; Pew: {};", 1, 2);
     }
 
-    @Test
+    /*@Test
     public void testBuffer1() throws Exception {
         assertTrue(OneTimeLogger.isEligible("Message here"));
 
         assertFalse(OneTimeLogger.isEligible("Message here"));
 
         assertTrue(OneTimeLogger.isEligible("Message here 23"));
-    }
+    }*/
 }

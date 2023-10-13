@@ -20,7 +20,6 @@
 
 package dev.danvega.tools;
 
-import org.junit.AfterClass;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
@@ -44,10 +43,6 @@ public class PropertyParserTest {
 
     @BeforeAll
     public static void setUpClass() {
-    }
-
-    @AfterClass
-    public static void tearDownClass() {
     }
 
     @BeforeEach

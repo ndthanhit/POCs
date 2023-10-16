@@ -1,7 +1,5 @@
 package dev.danvega;
 
-import org.nd4j.common.primitives.Counter;
-
 import java.lang.reflect.InvocationTargetException;
 
 public class Application {
@@ -15,27 +13,5 @@ public class Application {
 
         Class<?> thanhClazz = Class.forName("dev.danvega.ThanhMessage");
         thanhClazz.getMethod("printMessage").invoke(thanhClazz.getConstructor().newInstance());
-
-        Counter<String> counterA = new Counter<>();
-
-        counterA.incrementCount("A", 1);
-        counterA.incrementCount("A", 1);
-        counterA.incrementCount("A", 1);
-
-        Counter<String> counterB = new Counter<>();
-        counterB.incrementCount("B", 2);
-        counterB.incrementCount("B", 2);
-
-        System.out.println(counterA.getCount("A")); // 3
-        System.out.println(counterA.getCount("B")); // 4
-
-        counterA.incrementAll(counterB);
-
-        System.out.println(counterA.getCount("A")); // 3
-        System.out.println(counterA.getCount("B")); // 4
-
-        counterA.setCount("B", 234);
-
-        System.out.println(counterA.getCount("B")); // 234
     }
 }

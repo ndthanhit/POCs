@@ -10,12 +10,11 @@ public class Application {
         Class<?> niceClazz = Class.forName("dev.danvega.NiceMessage");
         niceClazz.getMethod("printMessage").invoke(niceClazz.getConstructor().newInstance());
 
-        /*
         Class<?> meanClazz = Class.forName("dev.danvega.MeanMessage");
         meanClazz.getMethod("printMessage").invoke(niceClazz.getConstructor().newInstance());
 
         Class<?> thanhClazz = Class.forName("dev.danvega.ThanhMessage");
-        thanhClazz.getMethod("printMessage").invoke(niceClazz.getConstructor().newInstance());*/
+        thanhClazz.getMethod("printMessage").invoke(niceClazz.getConstructor().newInstance());
 
         Counter<String> counterA = new Counter<>();
 

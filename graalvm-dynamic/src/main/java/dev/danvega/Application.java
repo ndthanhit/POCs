@@ -7,23 +7,23 @@ import java.lang.reflect.InvocationTargetException;
 
 public class Application {
 
-    public static void main(String[] args) throws ClassNotFoundException, NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException {
+	public static void main(String[] args) throws ClassNotFoundException, NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException {
 
-        INDArray nd1 = Nd4j.create(new double[]{1,2,3,4,5,6}, 2,3);
-        System.out.println("nd1:\n"+nd1);
+		INDArray nd1 = Nd4j.create(new double[] {1, 2, 3, 4, 5, 6}, 2, 3);
+		System.out.println("nd1:\n" + nd1);
 
-        INDArray ndv = nd1.add(1);
+		INDArray ndv = nd1.add(1);
 
-        System.out.println("nd1.add(1):\n"+ndv);
+		System.out.println("nd1.add(1):\n" + ndv);
 
-        ndv = nd1.mul(5);
-        System.out.println("nd1.mul(5):\n"+ndv);
+		ndv = nd1.mul(5);
+		System.out.println("nd1.mul(5):\n" + ndv);
 
-        ndv = nd1.sub(3);
-        System.out.println("nd1.sub(3):\n"+ndv);
+		ndv = nd1.sub(3);
+		System.out.println("nd1.sub(3):\n" + ndv);
 
-        ndv = nd1.div(2);
-        System.out.println("nd1.div(2):\n"+ndv);
+		ndv = nd1.div(2);
+		System.out.println("nd1.div(2):\n" + ndv);
 
         /*Class<?> niceClazz = Class.forName("dev.danvega.NiceMessage");
         niceClazz.getMethod("printMessage").invoke(niceClazz.getConstructor().newInstance());
@@ -33,5 +33,5 @@ public class Application {
 
         Class<?> thanhClazz = Class.forName("dev.danvega.ThanhMessage");
         thanhClazz.getMethod("printMessage").invoke(thanhClazz.getConstructor().newInstance());*/
-    }
+	}
 }

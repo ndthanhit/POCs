@@ -13,6 +13,7 @@
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <native.maven.plugin.version>0.9.19</native.maven.plugin.version>
+        <ztexec.version>1.12</ztexec.version>
     </properties>
 
     <profiles>
@@ -87,6 +88,11 @@
             <artifactId>junit-jupiter</artifactId>
             <version>RELEASE</version>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.zeroturnaround</groupId>
+            <artifactId>zt-exec</artifactId>
+            <version>${ztexec.version}</version>
         </dependency>
         <!--        <dependency>
                     <groupId>org.slf4j</groupId>
